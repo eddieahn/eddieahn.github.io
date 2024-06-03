@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head></head>
+	<body>
+		<h1 style="color:white;">This is iframe content</h1>
+		
+	<!--	<script>
+			setTimeout(function(){
+				parent.s.eVar100 = "test1";
+				parent.s.eVar200 = "test2";
+				parent.s.t();
+			},3000)
+		</script> -->
+		
+		<script>
+			parent.postMessage({k1:"test1", k2:"test2"},"http://127.0.0.1:8887");
+		</script>
+	</body>
+</html>
